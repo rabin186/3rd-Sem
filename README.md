@@ -1,2 +1,7 @@
 # 3rd-Sem
-All the projects of 3rd Semester Bsc.Csit
+This repository contains my study materials for the 3rd semester, including:
+- DSA (Data Structures and Algorithms)
+- CA (Computer Architecture)
+- CG (Computer Graphics)
+- STAT (Statistics)
+- NM (Numerical Methods)
