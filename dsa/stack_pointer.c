@@ -1,12 +1,14 @@
 #include<stdio.h>
+#include<stdlib.h>
 void push();
 void pop();
 void display();
-int i,j,choice=0,n,top = -1,stack[100];
+int i,j,choice=0,n,top = -1,*stack;
 int main()
 {
   printf("Enter the no. of elements of Stack: ");
   scanf("%d",&n);
+  stack=(int *)calloc(n,sizeof(int));
   printf("\n*********Stack Operation Using Array*********\n");
   while(choice != 4)
   {
@@ -30,6 +32,7 @@ int main()
 
       case 4:
         printf("Exiting...\n");
+        free(stack);
         break;
 
       default:
@@ -43,15 +46,12 @@ void push()
   int val;
   if(top == n-1){
     printf("Stack Overflow\n");
-    return;
   }
   else{
     printf("Please Enter the value to be inserted: ");
-    scanf("%d",&val);
-    //top+=1;
-    top=top+1;
-    stack[top]=val;
-    printf("The inserted value is: %d\n",val);
+    scanf("%d",&val); 
+    top++;
+    *(stack+top)=val;
   }
 }
 
@@ -61,11 +61,10 @@ void pop()
   if(top == -1)
   {
     printf("Stack Underflow\n");
-    return;
   }
   else{
-    val=stack[top];
-    top=top-1;
+    val=*(stack+top);
+    top--;
     printf("The popped item is: %d\n",val);
   }
 }
@@ -75,6 +74,7 @@ void display() {
         return;
     }
     for (i = top; i >= 0; i--) {
-        printf("%d\n", stack[i]);
+        printf("%d\n",*(stack+i));
     }
 }
+
