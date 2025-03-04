@@ -4,17 +4,6 @@
 void infixTOpostfix(char infix[], char post_stack[]);
 int precedency(char c);
 
-int precedency(char c) {
-    if (c == '$')
-        return 4;
-    else if (c == '/' || c == '*')
-        return 3;
-    else if (c == '+' || c == '-')
-        return 2;
-    else
-        return 1;
-}
-
 int main() {
     char infix[100], postfix[100];  
     printf("Enter infix expression: ");
@@ -26,6 +15,17 @@ int main() {
     printf("\n-----------------------------------\n");
     printf("Programmed By Rabin Acharya.\n");
     return 0;
+}
+
+int precedency(char c) {
+    if (c == '$')
+        return 4;
+    else if (c == '/' || c == '*')
+        return 3;
+    else if (c == '+' || c == '-')
+        return 2;
+    else
+        return 1;
 }
 
 void infixTOpostfix(char infix[], char post_stack[]) {
