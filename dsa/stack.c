@@ -36,6 +36,9 @@ int main()
         printf("Please Enter a valid choice.\n");
     }
   }
+  printf("\n-----------------------------------\n");
+  printf("Programmed By Rabin Acharya.\n");
+
 }
 
 void push()
