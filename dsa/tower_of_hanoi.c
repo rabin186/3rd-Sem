@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 void TOH(int n, char S, char D, char temp){
   if (n>0){
     TOH(n-1,S,temp,D);
