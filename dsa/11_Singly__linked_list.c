@@ -200,5 +200,8 @@ int main() {
         printf("Invalid choice.\n");
     }
   }
+  printf("\n-----------------------------\n");
+  printf("Programmed By Rabin Acharya.\n");
+  return 0;
 }
 

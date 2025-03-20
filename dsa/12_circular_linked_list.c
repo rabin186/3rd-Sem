@@ -17,12 +17,12 @@ void insert_beg() {
     Newnode->data = item;
 
     if (first == NULL) {
-        Newnode->next = Newnode; // Circular link to itself
+        Newnode->next = Newnode; 
         first = last = Newnode;
     } else {
         Newnode->next = first;
         first = Newnode;
-        last->next = first; // Maintain circular connection
+        last->next = first; 
     }
 }
 
@@ -42,7 +42,7 @@ void insert_pos() {
     if (pos == 1) {
         Newnode->next = first;
         first = Newnode;
-        last->next = first; // Maintain circular link
+        last->next = first;
         return;
     }
 
@@ -61,7 +61,7 @@ void insert_pos() {
     temp->next = Newnode;
 
     if (temp == last) { 
-        last = Newnode; // Update last if inserted at end
+        last = Newnode; 
     }
 }
 
@@ -75,11 +75,11 @@ void insert_end() {
 
     if (first == NULL) {
         first = last = Newnode;
-        last->next = first; // Circular link
+        last->next = first; 
     } else {
         last->next = Newnode;
         last = Newnode;
-        last->next = first; // Maintain circular link
+        last->next = first; 
     }
 }
 
@@ -94,7 +94,7 @@ void delete_beg() {
         first = last = NULL;
     } else {
         first = first->next;
-        last->next = first; // Maintain circular link
+        last->next = first; 
     }
     free(temp);
 }
@@ -128,7 +128,7 @@ void delete_pos() {
     temp->next = hold->next;
 
     if (hold == last) { 
-        last = temp; // Update last if last node is deleted
+        last = temp; 
     }
 
     free(hold);
@@ -151,7 +151,7 @@ void delete_end() {
 
     free(last);
     last = temp;
-    last->next = first; // Maintain circular link
+    last->next = first; 
 }
 
 void display() {
@@ -164,7 +164,7 @@ void display() {
     do {
         printf("%d -> ", temp->data);
         temp = temp->next;
-    } while (temp != first); // Stop when we return to first node
+    } while (temp != first); 
     printf("(Back to first node)\n");
 }
 
@@ -205,6 +205,10 @@ int main() {
                 printf("Invalid choice.\n");
         }
     }
+    printf("\n-----------------------------\n");
+    printf("Programmed By Rabin Acharya.\n");
+    return 0;
 }
+
 
 

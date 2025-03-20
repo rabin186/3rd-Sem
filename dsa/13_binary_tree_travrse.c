@@ -114,4 +114,7 @@ int main() {
                 printf("Please enter a valid choice.\n");
         }
     }
+    printf("\n---------------------------\n");
+    printf("Programmed By Rabin Acharya.\n");
+    return 0;
 }
