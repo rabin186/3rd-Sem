@@ -7,7 +7,7 @@ int main()
 {
   printf("Enter the no. of elements of Stack: ");
   scanf("%d",&n);
-  printf("\n*********Stack Operation Using Array*********\n");
+  printf("\n*********Stack Operation Using Pointer*********\n");
   while(choice != 4)
   {
     printf("Please Choose what operation you want to perform on stack.");

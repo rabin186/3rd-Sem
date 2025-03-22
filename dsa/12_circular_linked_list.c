@@ -171,7 +171,7 @@ void display() {
 int main() {
     int choice;
     printf("\n*********Circular Linked List Operation*********\n");
-    while (1) {
+    while (choice != 8) {
         printf("\n1.Insert at Beginning\n2.Insert at Position\n3.Insert at End\n4.Delete Beginning\n5.Delete at Position\n6.Delete at End\n7.Display\n8.Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
@@ -200,7 +200,7 @@ int main() {
                 break;
             case 8: 
                 printf("Exiting....\n");
-                return 0;
+                break;
             default: 
                 printf("Invalid choice.\n");
         }

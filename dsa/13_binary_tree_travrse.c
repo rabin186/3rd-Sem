@@ -77,7 +77,7 @@ void post_order(node *temp) {
 
 int main() {
     int choice;
-    while (1) {  // Fix: Moved the menu inside the loop
+    while (choice != 5) {
         printf("--------------------------------------\n");
         printf("1. Insert value\n");
         printf("2. In-order traverse\n");
@@ -109,7 +109,7 @@ int main() {
                 break;
             case 5:
                 printf("Exiting...\n");
-                return 0;
+                break;
             default:
                 printf("Please enter a valid choice.\n");
         }

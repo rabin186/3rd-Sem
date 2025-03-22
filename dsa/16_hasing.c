@@ -15,7 +15,7 @@ int hashFunction(int key) {
 
 void insert() {
   NODE new_node;
-  printf("\nEnter key: ");
+  printf("Enter key: ");
   scanf("%d", &new_node.key);
   printf("Enter value: ");
   scanf("%d", &new_node.value);
@@ -130,6 +130,8 @@ int main() {
   }
   
   free(hashTable);
+  printf("\n-----------------------------\n");
+  printf("Programmed By Rabin Acharya.\n");
   return 0;
 }
 

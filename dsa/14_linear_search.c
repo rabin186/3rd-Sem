@@ -25,11 +25,11 @@ int main() {
     
     int result = linearSearch(arr, n, key);
     if (result != -1) {
-        printf("Element found at index %d\n", result);
+        printf("Element found at index %d\n", result+1);
     } else {
         printf("Element not found in the array\n");
     }
     printf("\n--------------------------------------\n");
-    printf("Programmed By Rabin Acharya");
+    printf("Programmed By Rabin Acharya.\n");
     return 0;
 }
