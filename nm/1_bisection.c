@@ -42,6 +42,8 @@ int main()
 				printf("\nThe process doesn't converge");
 			}
 		}	
-	}	
+	}
+  printf("\n---------------------------------------\n");
+  scanf("Programmed By Rabin Acharya");
 	return 0;
 }
