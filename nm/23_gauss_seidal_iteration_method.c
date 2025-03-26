@@ -8,8 +8,9 @@ void gaussSeidel(int n, double a[n][n], double b[n], double x[n]) {
   int i, j, iter;
   double sum, error, new_xi;
 
-  printf("Iteration\tSolutions\t\t\tError\n");
-  printf("------------------------------------------------\n");
+  printf("Iteration\t\tSolutions\t\t\t\tError\n");
+  printf("---------------------------------------------------------------------"
+         "--\n");
 
   for (iter = 1; iter <= MAX_ITER; iter++) {
     error = 0.0;
@@ -73,9 +74,9 @@ int main() {
 
   printf("\nFinal Solution:\n");
   for (i = 0; i < n; i++) {
-    printf("x[%d] = %.6f\n", i, x[i]);
+    printf("x[%d] = %.3f\n", i, x[i]);
   }
-  printf("\n-----------------------\n");
+  printf("\n---------------------------\n");
   printf("Programmed By Rabin Acharya.\n");
   return 0;
 }

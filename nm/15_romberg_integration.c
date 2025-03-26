@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
-double f(double x) {
-  return 1.0 / x;
-}
+double f(double x) { return 1.0 / x; }
 
 int main() {
   int i, j, k, p, q;
@@ -30,9 +28,8 @@ int main() {
   }
 
   printf("\nThe Romberg Estimate of integration is: %.6f\n", T[p][q]);
-  printf("\n-----------------------------\n");
+  printf("\n---------------------------\n");
   printf("Programmed By Rabin Acharya.\n");
 
   return 0;
 }
-

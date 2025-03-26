@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int n,i,j,k;
+  int n, i, j, k;
   printf("Enter the size of the square matrix (n): ");
   scanf("%d", &n);
   float A[n][n], L[n][n], U[n][n];
@@ -17,13 +17,10 @@ int main() {
       U[i][j] = 0;
     }
   }
-  for (i = 0; i < n; i++) 
-  {
-    for (k = i; k < n; k++) 
-    {
+  for (i = 0; i < n; i++) {
+    for (k = i; k < n; k++) {
       float sum = 0;
-      for (j = 0; j < i; j++) 
-      {
+      for (j = 0; j < i; j++) {
         sum += L[i][j] * U[j][k];
       }
       U[i][k] = A[i][k] - sum;
@@ -43,7 +40,7 @@ int main() {
   printf("\nLower Triangular Matrix (L):\n");
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
-      printf("%.4f\t", L[i][j]);
+      printf("%.2f\t", L[i][j]);
     }
     printf("\n");
   }
@@ -51,7 +48,7 @@ int main() {
   printf("\nUpper Triangular Matrix (U):\n");
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
-      printf("%.4f\t", U[i][j]);
+      printf("%.2f\t", U[i][j]);
     }
     printf("\n");
   }
