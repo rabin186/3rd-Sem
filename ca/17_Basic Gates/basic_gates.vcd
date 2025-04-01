@@ -1,0 +1,52 @@
+$date
+  Mon Mar 31 13:55:29 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module basic_gates $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # and_out $end
+$var reg 1 $ or_out $end
+$var reg 1 % not_out $end
+$var reg 1 & nand_out $end
+$var reg 1 ' nor_out $end
+$var reg 1 ( xor_out $end
+$var reg 1 ) xnor_out $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+1%
+1&
+1'
+0(
+1)
+#10000000
+1"
+1$
+0'
+1(
+0)
+#20000000
+1!
+0"
+0%
+#30000000
+1"
+1#
+0&
+0(
+1)
+#40000000

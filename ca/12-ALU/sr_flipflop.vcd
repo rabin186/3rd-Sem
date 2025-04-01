@@ -1,0 +1,68 @@
+$date
+  Mon Mar 31 22:16:46 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module alutb $end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 3 # alu_sel[2:0] $end
+$var reg 4 $ alu_out[3:0] $end
+$var reg 1 % carry_out $end
+$var reg 1 & stop_sim $end
+$upscope $end
+$enddefinitions $end
+#0
+b1010 !
+b0011 "
+b000 #
+b1101 $
+0%
+0&
+#1000000
+#10000000
+b001 #
+b0111 $
+#11000000
+#20000000
+b010 #
+b0010 $
+#21000000
+#30000000
+b011 #
+b1011 $
+#31000000
+#40000000
+b100 #
+b1001 $
+#41000000
+#50000000
+b101 #
+b0101 $
+#51000000
+#60000000
+b110 #
+b0011 $
+#61000000
+#70000000
+b111 #
+b1010 $
+#71000000
+#80000000
+b1111 !
+b000 #
+b0010 $
+1%
+#81000000
+#90000000
+1&

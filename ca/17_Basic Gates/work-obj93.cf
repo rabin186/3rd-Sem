@@ -1,0 +1,4 @@
+v 4
+file . "5-basic_gate.vhdl" "e4942753727c968962ee8f18a04264aa80d01579" "20250331081016.356":
+  entity basic_gates at 1( 0) + 0 on 11;
+  architecture test of basic_gates at 11( 216) + 0 on 12;

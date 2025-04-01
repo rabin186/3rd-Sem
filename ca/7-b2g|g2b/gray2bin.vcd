@@ -1,0 +1,22 @@
+$date
+  Mon Mar 31 20:54:19 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module gray2bin $end
+$var reg 4 ! gray_n[3:0] $end
+$var reg 4 " n[3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+b1111 !
+b1010 "
+#10000000

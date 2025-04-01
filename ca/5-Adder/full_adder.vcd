@@ -1,0 +1,54 @@
+$date
+  Mon Mar 31 14:17:49 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module full_adder $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # cin $end
+$var reg 1 $ sum $end
+$var reg 1 % cout $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+#5000000000000000
+1"
+1$
+#10000000000000000
+1!
+0"
+#15000000000000000
+1"
+0$
+1%
+#20000000000000000
+0!
+0"
+1#
+1$
+0%
+#25000000000000000
+1"
+0$
+1%
+#30000000000000000
+1!
+0"
+#35000000000000000
+1"
+1$
+#40000000000000000

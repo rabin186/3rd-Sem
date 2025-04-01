@@ -1,0 +1,4 @@
+v 4
+file . "alu.vhd" "df9110bb63622c28569a37c33d5713ad2ccfb613" "20250331163136.340":
+  entity alutb at 1( 0) + 0 on 23;
+  architecture behavior of alutb at 8( 98) + 0 on 24;

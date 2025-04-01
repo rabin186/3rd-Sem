@@ -1,0 +1,42 @@
+$date
+  Mon Mar 31 14:35:28 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module dmux1to4 $end
+$var reg 1 ! d $end
+$var reg 2 " sel[1:0] $end
+$var reg 1 # y0 $end
+$var reg 1 $ y1 $end
+$var reg 1 % y2 $end
+$var reg 1 & y3 $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+b00 "
+1#
+0$
+0%
+0&
+#10000000
+b01 "
+0#
+1$
+#20000000
+b10 "
+0$
+1%
+#30000000
+b11 "
+0%
+1&
+#40000000
